@@ -1,0 +1,19 @@
+from typing import Dict, List, Tuple
+
+
+def get_dict_items(age_dict: Dict[str, int]) -> List[Tuple[str, int]]:
+    #list_keys = list(age_dict.keys())
+    #list_vals = list(age_dict.values())
+
+    tuple_list = []
+
+    for key, val in age_dict.items():
+        tuple_list.append((key, val))
+    return tuple_list
+
+
+# do not modify below this line
+print(get_dict_items({'Alice': 25, 'Bob': 30, 'Charlie': 35}))
+print(get_dict_items({'Alice': 25, 'Bob': 30, 'Charlie': 35, 'David': 40}))
+print(get_dict_items({'Bob': 30, 'David': 40, 'Charlie': 35, 'Alice': 25, 'Eve': 45}))
+print(get_dict_items({'Alice': 25, 'Bob': 30, 'Charlie': 35, 'David': 40, 'Eve': 45, 'Frank': 50}))
